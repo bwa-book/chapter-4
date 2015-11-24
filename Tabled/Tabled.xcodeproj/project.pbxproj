@@ -19,6 +19,7 @@
 		4D95863E1C040A3A009F6A61 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95863D1C040A3A009F6A61 /* InterfaceController.swift */; };
 		4D9586401C040A3A009F6A61 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95863F1C040A3A009F6A61 /* ExtensionDelegate.swift */; };
 		4D9586421C040A3A009F6A61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D9586411C040A3A009F6A61 /* Assets.xcassets */; };
+		4D9586521C040AFC009F6A61 /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9586511C040AFC009F6A61 /* RowController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		4D95863F1C040A3A009F6A61 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		4D9586411C040A3A009F6A61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D9586431C040A3A009F6A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D9586511C040AFC009F6A61 /* RowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				4D95863F1C040A3A009F6A61 /* ExtensionDelegate.swift */,
 				4D9586411C040A3A009F6A61 /* Assets.xcassets */,
 				4D9586431C040A3A009F6A61 /* Info.plist */,
+				4D9586511C040AFC009F6A61 /* RowController.swift */,
 			);
 			path = "Tabled WatchKit Extension";
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D9586521C040AFC009F6A61 /* RowController.swift in Sources */,
 				4D9586401C040A3A009F6A61 /* ExtensionDelegate.swift in Sources */,
 				4D95863E1C040A3A009F6A61 /* InterfaceController.swift in Sources */,
 			);
