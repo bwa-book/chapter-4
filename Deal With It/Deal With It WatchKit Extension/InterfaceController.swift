@@ -18,5 +18,13 @@ class InterfaceController: WKInterfaceController {
             preferredStyle: .Alert,
             actions: alertActions())
     }
+    
+    func alertActions() -> [WKAlertAction] {
+        return [
+            WKAlertAction.init(title: "Deal with it", style: .Default) {self.buttonState = .OutOfDanger},
+            WKAlertAction.init(title: "Ignore it", style: .Cancel) {self.buttonState = .Danger},
+            WKAlertAction.init(title: "Explode it", style: .Destructive) {self.buttonState = .Exploded}
+        ]
+    }
 
 }
