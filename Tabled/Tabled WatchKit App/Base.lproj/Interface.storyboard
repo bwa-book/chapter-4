@@ -25,6 +25,9 @@
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="listTable" destination="RAd-Pm-jOn" id="D5o-JO-sql"/>
+                    </connections>
                 </controller>
             </objects>
         </scene>
