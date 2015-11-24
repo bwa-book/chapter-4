@@ -10,8 +10,15 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Deal_With_It_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="center" verticalAlignment="center" title="DANGER!" id="m7j-Zv-RjQ"/>
+                        <button width="1" alignment="center" verticalAlignment="center" title="DANGER!" id="m7j-Zv-RjQ">
+                            <connections>
+                                <action selector="dangerTapped" destination="AgC-eL-Hgc" id="1Tj-xR-f8e"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="dangerButton" destination="m7j-Zv-RjQ" id="059-Sk-JUY"/>
+                    </connections>
                 </controller>
             </objects>
         </scene>

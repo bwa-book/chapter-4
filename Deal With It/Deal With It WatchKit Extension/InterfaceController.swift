@@ -9,5 +9,14 @@ class InterfaceController: WKInterfaceController {
     }
     
     var buttonState = ButtonState.Danger
+    
+    @IBOutlet weak var dangerButton: WKInterfaceButton!
+    
+    @IBAction func dangerTapped() {
+        presentAlertControllerWithTitle("Danger!",
+            message: "What will you do?",
+            preferredStyle: .Alert,
+            actions: alertActions())
+    }
 
 }
