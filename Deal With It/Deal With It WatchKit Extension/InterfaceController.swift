@@ -26,5 +26,34 @@ class InterfaceController: WKInterfaceController {
             WKAlertAction.init(title: "Explode it", style: .Destructive) {self.buttonState = .Exploded}
         ]
     }
+    
+    override func willActivate() {
+        super.willActivate()
+        updateButton()
+    }
+    
+    func updateButton() {
+        switch buttonState {
+        case .OutOfDanger: outOfDanger()
+        case .Danger: danger()
+        case .Exploded: exploded()
+        }
+    }
+    
+    func outOfDanger() {
+        dangerButton.setTitle("Phew")
+        dangerButton.setEnabled(false)
+    }
+    
+    func danger() {
+        dangerButton.setTitle("DANGER!")
+        dangerButton.setEnabled(true)
+    }
+    
+    func exploded() {
+        dangerButton.setTitle("BOOM!")
+        dangerButton.setBackgroundColor(.redColor())
+        dangerButton.setEnabled(false)
+    }
 
 }
