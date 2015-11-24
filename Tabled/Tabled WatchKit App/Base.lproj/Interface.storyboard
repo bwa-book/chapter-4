@@ -13,7 +13,14 @@
                         <table alignment="left" id="RAd-Pm-jOn">
                             <items>
                                 <tableRow identifier="RowController" id="Rx5-8r-PEl" customClass="RowController" customModule="Tabled_WatchKit_Extension">
-                                    <group key="rootItem" width="1" alignment="left" id="w8v-T9-ZUt"/>
+                                    <group key="rootItem" width="1" alignment="left" id="w8v-T9-ZUt">
+                                        <items>
+                                            <label alignment="left" text="Label" id="jXo-7e-RWT"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="listLabel" destination="jXo-7e-RWT" id="wmk-Ft-0hf"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
